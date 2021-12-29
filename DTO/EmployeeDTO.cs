@@ -1,10 +1,16 @@
+
 using System.ComponentModel.DataAnnotations;
-namespace empService.Models
+
+namespace empService.DTO
 {
-    public class Employee //Treat this as a model omly. and not like a model validator
+    public class EmployeeDTO
     {
         public int employeeID{get; set;}
+        
+        [Required]
         public string employeeName{get; set;}
+        
+        [Required]
         public int employeeAge{get; set;}
     }
 }
